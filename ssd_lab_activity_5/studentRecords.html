@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <script>
+
+    function myCreateFunction() {
+        var table = document.getElementById("myTable");
+        var row = table.insertRow(1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+
+        cell1.innerHTML = document.getElementById('id1').value;
+        cell2.innerHTML = document.getElementById('id2').value;
+        document.getElementById('id1').value = '';
+        document.getElementById('id2').value= '';
+    }
+
+    function myDeleteFunction() {
+        document.getElementById("myTable").deleteRow(1);
+    }
+    
+    </script>
+
+
+</head>
+<body>
+
+    <div class="students" >
+    <label for="uname"><b>Username</b></label>
+    <input type="text" id='id1'>
+    <label for="roll number"><b>Roll number</b></label>
+    <input type="number" id='id2' >
+
+
+    <table id="myTable">
+        <tr>
+            <th> Name </th>
+            <th> Roll No </th>
+        </tr>
+
+    </table>
+
+      <br>
+      
+     
+    <button class="button1" onclick="myCreateFunction()">Add New</button>
+    <button class="button2" onclick="myDeleteFunction()">Delete Last Record</button>
+
+    </div>
+
+</body>
+</html>

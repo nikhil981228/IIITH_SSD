@@ -1,0 +1,71 @@
+
+
+
+body{
+background-color: blueviolet 
+;
+}
+
+.students {
+    margin: 200px;
+    margin-left: 300px;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    background-color: gold;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 5px 10px;
+    font-family: Arial;
+}
+
+.button1 {
+    background-color: green;
+    font-family: Arial;
+}
+
+.button2 {
+    background-color: red;
+    font-family: Arial;
+}
+
+.border_hover:hover{
+    border-color: blue;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+table {
+    border: 1px solid;
+    padding: 10px; 
+    /* margin-left: 250px; */
+    width: 100%;
+}
+
+th {
+    /* border: 1px solid; */
+    /* padding: 10px; */
+    /* margin-left: 250px; */
+    background-color: red;
+}
+
+td {
+    background-color: green;
+    
+    /* border: 1px solid; */
+    /* padding: 10px; */
+    /* margin-left: 250px; */
+}
+
+/* #example1 {
+    box-shadow: 5px 10px;
+} */

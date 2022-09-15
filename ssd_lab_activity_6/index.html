@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ </head>
+
+ <body class="bod" >
+        
+        <form name="myForm"  onsubmit="return validateForm()">
+        <p>
+             
+             Manager Name: <input type="text" name="name" required>   </p> 
+             Group Email: <input type="text" name="email" > <span class="error" id="emailError"></span></p>  </p>
+             Server Username: <input type="text" name="servername" required> <span class="error" id="serverError"></span> </p> 
+             
+             Server Password: <input type="password" class="spass" required> <span class="error" id="spassError"> </span></p>
+             Confirm Password: <input type="password" class="scpass" required> <span class="error" id="scpassemailError"> </span></p>
+             
+             
+             Team Lead: <input type="text" name="teamlead" required> </p>
+             Team Members: <select name = "dropdown">
+                <option value = "First" selected>Ram</option>
+                <option value = "Second">Shaam</option>
+                <option value = "Third">Anil</option>
+             </select> </p>
+             <input type="submit" value="Submit"  onclick="validateForm()">
+
+           
+        </form>
+
+        <script src="index.js"></script>
+    
+</body>
+</html>
